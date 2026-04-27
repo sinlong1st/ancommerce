@@ -1,0 +1,12 @@
+Read and follow these files:
+
+- .ai/context/project_context.md
+- .ai/rules/global_rules.md
+- .ai/skills/code_review.md
+
+Code to review:
+[PASTE CODE OR FILE CONTENT HERE]
+
+Task:
+Review the code and give specific fixes only.
+Do not rewrite the entire file unless necessary.

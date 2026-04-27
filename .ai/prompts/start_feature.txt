@@ -1,0 +1,14 @@
+Read and follow these files:
+
+- .ai/context/project_context.md
+- .ai/context/current_status.md
+- .ai/rules/global_rules.md
+- .ai/workflows/feature_dev_workflow.md
+- .ai/skills/feature_planning.md
+
+Task:
+[DESCRIBE FEATURE HERE]
+
+Important:
+Create an implementation plan only.
+Do not write code yet.

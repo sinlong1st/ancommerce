@@ -1,0 +1,14 @@
+Read and follow these files:
+
+- .ai/context/project_context.md
+- .ai/rules/global_rules.md
+- .ai/rules/database_rules.md
+- .ai/workflows/database_change_workflow.md
+- .ai/skills/database_design.md
+
+Database change request:
+[DESCRIBE CHANGE HERE]
+
+Task:
+Plan the database change first.
+Do not write code yet.

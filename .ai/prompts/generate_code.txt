@@ -1,0 +1,18 @@
+Read and follow these files:
+
+- .ai/context/project_context.md
+- .ai/context/current_status.md
+- .ai/rules/global_rules.md
+- .ai/skills/code_generation.md
+
+Approved plan:
+[PASTE APPROVED PLAN HERE]
+
+Task:
+Generate the code for the approved plan.
+
+Important:
+- Do not modify unrelated files.
+- Tell me exactly what files to create or update.
+- Include commands to run.
+- Include manual test checklist.

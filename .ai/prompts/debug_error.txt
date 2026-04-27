@@ -1,0 +1,22 @@
+Read and follow these files:
+
+- .ai/context/project_context.md
+- .ai/context/current_status.md
+- .ai/rules/global_rules.md
+- .ai/skills/debugging.md
+
+Error:
+[PASTE ERROR HERE]
+
+Related code:
+[PASTE RELATED CODE HERE]
+
+What I expected:
+[WRITE EXPECTED RESULT]
+
+What happened:
+[WRITE ACTUAL RESULT]
+
+Task:
+Explain the root cause and give the smallest safe fix.
+Do not refactor unrelated code.
