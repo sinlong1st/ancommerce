@@ -1,0 +1,88 @@
+import { Product } from "@/types/product";
+
+export const mockProducts: Product[] = [
+  {
+    id: "1",
+    name: "Wireless Bluetooth Headphones",
+    category: "Electronics",
+    price: 79.99,
+    description: "Premium noise-cancelling headphones with 30-hour battery life",
+  },
+  {
+    id: "2",
+    name: "Classic Cotton T-Shirt",
+    category: "Clothing",
+    price: 24.99,
+    description: "Comfortable everyday t-shirt made from 100% organic cotton",
+  },
+  {
+    id: "3",
+    name: "Stainless Steel Water Bottle",
+    category: "Home & Garden",
+    price: 34.99,
+    description: "Insulated water bottle keeps drinks cold for 24 hours",
+  },
+  {
+    id: "4",
+    name: "The Art of Programming",
+    category: "Books",
+    price: 49.99,
+    description: "Comprehensive guide to modern software development practices",
+  },
+  {
+    id: "5",
+    name: "Yoga Mat Premium",
+    category: "Sports & Outdoors",
+    price: 44.99,
+    description: "Non-slip exercise mat perfect for yoga and fitness",
+  },
+  {
+    id: "6",
+    name: "Smart Watch Pro",
+    category: "Electronics",
+    price: 299.99,
+    description: "Feature-rich smartwatch with health tracking and notifications",
+  },
+  {
+    id: "7",
+    name: "Denim Jacket",
+    category: "Clothing",
+    price: 89.99,
+    description: "Stylish denim jacket with a modern fit",
+  },
+  {
+    id: "8",
+    name: "Ceramic Plant Pot Set",
+    category: "Home & Garden",
+    price: 39.99,
+    description: "Set of 3 decorative plant pots with drainage holes",
+  },
+  {
+    id: "9",
+    name: "Building Blocks Set",
+    category: "Toys & Games",
+    price: 59.99,
+    description: "Creative building set with 500+ colorful pieces",
+  },
+  {
+    id: "10",
+    name: "Running Shoes",
+    category: "Sports & Outdoors",
+    price: 119.99,
+    description: "Lightweight running shoes with superior cushioning",
+  },
+  {
+    id: "11",
+    name: "Portable Bluetooth Speaker",
+    category: "Electronics",
+    price: 64.99,
+    description: "Waterproof speaker with 360-degree sound",
+  },
+  {
+    id: "12",
+    name: "Cookbook Collection",
+    category: "Books",
+    price: 29.99,
+    description: "Essential recipes from around the world",
+  },
+];
