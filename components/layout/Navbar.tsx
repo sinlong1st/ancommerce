@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CartBadge from "@/components/cart/CartBadge";
 
 export default function Navbar() {
   return (
@@ -24,12 +25,7 @@ export default function Navbar() {
             >
               Products
             </Link>
-            <Link
-              href="/cart"
-              className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
-            >
-              Cart
-            </Link>
+            <CartBadge />
           </div>
         </div>
       </div>
