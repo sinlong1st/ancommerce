@@ -1,0 +1,51 @@
+Product detail page still has the old design.
+
+Compare:
+- design/claude-design-v1/page-shop.jsx
+- design/claude-design-v1/page-home.jsx
+- app/products/[id]/page.tsx
+- components/cart/AddToCartButton.tsx
+- .ai/context/design_system.md
+
+Task:
+Create a plan first to update the product detail page visual styling.
+
+Requirements:
+- Product detail page only
+- Keep existing dynamic route /products/[id]
+- Keep existing mock data lookup
+- Keep notFound() behavior
+- Keep AddToCartButton functionality
+- Match the warm Claude design:
+  - warm neutral background
+  - large rounded pastel product image panel
+  - badge/category styling
+  - brown/orange typography
+  - clean price hierarchy
+  - card-like product info area
+  - polished back link
+- Do not touch homepage, cart context, layout, product listing page, or database
+- Use Tailwind only
+
+Important:
+Plan only first. Do not write code yet.
+
+=>
+Approved. Please implement the plan.
+
+Rules:
+- Product detail page only
+- Keep existing dynamic route behavior
+- Keep existing mock data lookup
+- Keep notFound() behavior unchanged
+- Keep AddToCartButton logic unchanged
+- Match the warm Claude design as closely as possible
+- Use warm neutral backgrounds, rounded media panel, and warm typography
+- Do not modify homepage components
+- Do not modify product listing page
+- Do not modify cart context, routes, database, or layout
+- Use Tailwind only
+
+After coding:
+- list changed files
+- provide manual test steps

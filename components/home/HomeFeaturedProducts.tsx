@@ -32,10 +32,20 @@ export default function HomeFeaturedProducts({ products }: HomeFeaturedProductsP
         <div className="mt-8 text-center sm:hidden">
           <Link
             href="/products"
-            className="inline-flex items-center text-sm font-semibold text-blue-700 hover:text-blue-600 transition-colors"
+            className="group inline-flex items-center gap-1 text-sm font-bold text-[#C2683C] transition-colors hover:text-[#AA5733]"
           >
             View full catalog
-            <span className="ml-1" aria-hidden="true">{"->"}</span>
+            <span className="inline-flex transition-transform group-hover:translate-x-0.5" aria-hidden="true">
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="2.4"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </span>
           </Link>
         </div>
       </div>
