@@ -5,8 +5,8 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-[#ECDFD0] bg-white/90 backdrop-blur-[14px]">
       <div className="mx-auto flex h-[72px] w-full max-w-[1200px] items-center gap-5 px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="inline-flex items-center gap-[10px] text-[#2A1E14]">
-          <span className="inline-flex h-[40px] w-[40px] items-center justify-center rounded-[12px] bg-[#C2683C] text-white shadow-[0_18px_40px_-22px_rgba(194,104,60,.5)]">
+        <Link href="/" className="inline-flex items-center gap-2.5 rounded-full pr-1 text-[#2A1E14]">
+          <span className="inline-flex h-[42px] w-[42px] items-center justify-center rounded-[14px] bg-[#C2683C] text-white shadow-[0_18px_40px_-22px_rgba(194,104,60,.5)]">
             <svg
               className="h-5 w-5"
               fill="none"
@@ -18,7 +18,7 @@ export default function Navbar() {
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                d="M6 8h12l-1 12H7L6 8zm3 0V6a3 3 0 016 0v2"
               />
             </svg>
           </span>

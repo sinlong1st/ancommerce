@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Product } from "@/types/product";
+import QuickAddButton from "@/components/cart/QuickAddButton";
 
 interface ProductCardProps {
   product: Product;
@@ -107,12 +108,15 @@ export default function ProductCard({ product, badgeLabel }: ProductCardProps) {
             ${product.price.toFixed(2)}
           </p>
 
-          <Link
-            href={`/products/${product.id}`}
-            className="inline-flex items-center justify-center rounded-full bg-[#C2683C] px-4 py-2 text-sm font-bold text-white shadow-[0_18px_40px_-22px_rgba(194,104,60,.5)] transition-all hover:brightness-105"
-          >
-            View
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link
+              href={`/products/${product.id}`}
+              className="inline-flex items-center justify-center rounded-full border border-[#ECDFD0] px-3 py-2 text-sm font-bold text-[#7A4A33] transition-colors hover:border-[#C2683C] hover:text-[#C2683C]"
+            >
+              View
+            </Link>
+            <QuickAddButton product={product} />
+          </div>
         </div>
       </div>
     </article>
