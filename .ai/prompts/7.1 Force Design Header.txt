@@ -1,0 +1,38 @@
+Now port the Header/Navbar styling from the Claude design.
+
+Compare:
+- design/claude-design-v1/app.jsx
+- design/claude-design-v1/page-home.jsx
+- components/layout/Navbar.tsx
+- components/cart/CartBadge.tsx
+
+Task:
+Update only the navbar/header to match the Claude design more closely.
+
+Requirements:
+- Add logo/brand mark if Claude design has one
+- Add search bar in the header if Claude design has one
+- Make nav links match the Claude brown/warm color style
+- Keep existing links: Home, Products, Cart
+- Preserve CartBadge functionality and item count
+- Do not touch hero or homepage sections
+- Do not touch cart context or product routes
+- Use Tailwind only
+- No new libraries
+
+Update only components/layout/Navbar.tsx.
+
+Task:
+Make the Home and Products nav links use the same warm brown text style as the Claude design.
+
+Requirements:
+- Home and Products should not be plain black
+- Use warm brown color classes consistent with the current ShopGenie logo/hero style
+- Keep CartBadge unchanged
+- Do not touch hero, layout, cart context, or product routes
+- Use Tailwind only
+
+After coding:
+- list changed files
+- manual test steps
+

@@ -1,0 +1,20 @@
+Stop improving by interpretation.
+
+Task:
+Port the Hero section from:
+- design/claude-design-v1/page-home.jsx
+
+Into:
+- components/home/HomeHero.tsx
+
+Rules:
+- Match the Claude design as closely as possible
+- Preserve the same layout, spacing, colors, rounded shapes, gradients, and decorative elements
+- Convert JSX to TSX
+- Use Tailwind only
+- Do not change other homepage sections
+- Do not touch cart, product routes, layout, or data
+- If Claude uses hardcoded product/category visuals inside the hero, keep them as static visuals for now
+- Do not simplify the design unless required by Next.js
+
+After coding, list changed files.

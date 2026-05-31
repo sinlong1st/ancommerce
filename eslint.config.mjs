@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Reference design files are not part of the runnable Next.js app.
+    "design/**",
   ]),
 ]);
 

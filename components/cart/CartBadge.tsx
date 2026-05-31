@@ -1,19 +1,25 @@
 "use client";
 
 import Link from "next/link";
+import { useSyncExternalStore } from "react";
 import { useCart } from "@/context/CartContext";
 
 export default function CartBadge() {
   const { itemCount } = useCart();
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  );
 
   return (
     <Link
       href="/cart"
-      className="relative text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+      className="relative inline-flex items-center rounded-full bg-[#F4E9DD] px-3 py-2 text-[15px] font-bold text-[#2A1E14] transition-colors hover:bg-[#C2683C] hover:text-white"
     >
       Cart
-      {itemCount > 0 && (
-        <span className="absolute -top-2 -right-4 flex h-4 w-4 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white">
+      {mounted && itemCount > 0 && (
+        <span className="absolute -right-1 -top-1 flex min-h-[21px] min-w-[21px] items-center justify-center rounded-full border-2 border-white bg-[#E8A93C] px-1 text-xs font-extrabold text-[#241133]">
           {itemCount > 99 ? "99+" : itemCount}
         </span>
       )}
