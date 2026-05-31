@@ -1,0 +1,12 @@
+Small adjustment:
+
+Custom app/products/[id]/not-found.tsx is optional. Only create it if simple.
+Do not create new reusable components unless needed.
+Rules:
+
+Use existing mock data only
+Do not add database code
+Do not build cart logic yet
+Keep Add to Cart as UI only
+Do not modify unrelated files
+After coding, list changed files and manual test steps

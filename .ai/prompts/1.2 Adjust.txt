@@ -1,0 +1,18 @@
+Good plan. Please adjust the file structure before implementation:
+
+Use:
+
+components/layout/Navbar.tsx
+components/layout/Footer.tsx
+Do not put reusable components inside app/components.
+
+Then implement the approved plan.
+
+Rules:
+
+Keep Navbar and Footer as Server Components.
+Use Tailwind only.
+Do not add new libraries.
+Do not modify unrelated files.
+Keep the homepage simple.
+After coding, list changed files and manual test steps.

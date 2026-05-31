@@ -1,0 +1,25 @@
+Read:
+- .ai/context/project_context.md
+- .ai/context/current_status.md
+- .ai/rules/global_rules.md
+- .ai/workflows/feature_dev_workflow.md
+- .ai/skills/feature_planning.md
+
+Task:
+Build MVP cart system using localStorage.
+
+Requirements:
+- Add to Cart button on product detail page should add product to cart
+- Store cart in localStorage
+- Create /cart page
+- Display cart items (name, price, quantity)
+- Allow updating quantity
+- Allow removing item
+- Show subtotal
+- Cart should persist after refresh
+- No database
+- No authentication
+
+Important:
+Create implementation plan only.
+Do not write code yet.

@@ -1,0 +1,20 @@
+Read:
+- .ai/context/project_context.md
+- .ai/context/current_status.md
+- .ai/rules/global_rules.md
+- .ai/workflows/feature_dev_workflow.md
+- .ai/skills/feature_planning.md
+
+Task:
+Set up base layout for the app.
+
+Requirements:
+- Navbar
+- Footer
+- Basic layout wrapper
+- Clean Tailwind styling
+- Keep it simple
+
+Important:
+Create a plan only.
+Do not write code yet.

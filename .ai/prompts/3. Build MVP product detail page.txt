@@ -1,0 +1,26 @@
+Read:
+- .ai/context/project_context.md
+- .ai/context/current_status.md
+- .ai/rules/global_rules.md
+- .ai/workflows/feature_dev_workflow.md
+- .ai/skills/feature_planning.md
+
+Task:
+Build the MVP product detail page.
+
+Requirements:
+- Create dynamic route /products/[id]
+- Use existing mock product data from lib/mock-data.ts
+- Find product by id
+- Show product name, category, price, description, image placeholder, stock/status if available
+- Add "Back to Products" link
+- Add "Add to Cart" button as UI only for now
+- If product id does not exist, show notFound()
+- Keep styling clean and responsive
+- Use Tailwind only
+- Do not set up database yet
+- Do not build cart logic yet
+
+Important:
+Create an implementation plan only.
+Do not write code yet.

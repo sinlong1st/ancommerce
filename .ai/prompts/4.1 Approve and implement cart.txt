@@ -1,0 +1,20 @@
+Approved with small adjustments:
+
+1. Keep Navbar as simple as possible.
+   If cart count needs client state, create a separate Client Component:
+   - components/cart/CartBadge.tsx
+   Then import it into Navbar.
+
+2. It is okay to wrap the app with CartProvider in app/layout.tsx.
+
+3. For MVP, cart items can store product snapshot data like name and price.
+   Add a comment that real checkout must recalculate price on the server later.
+
+4. Do not add database, auth, or checkout logic.
+
+Please implement the plan now.
+
+After coding:
+- List changed files
+- List commands to run
+- Provide manual test checklist

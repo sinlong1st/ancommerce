@@ -1,0 +1,18 @@
+Read:
+
+- design/claude-design-v1/page-home.jsx
+- app/page.tsx
+- .ai/context/project_context.md
+- .ai/context/design_system.md
+
+Task:
+
+Compare the Claude design homepage with my current homepage.
+
+Create:
+1. Design differences
+2. Reusable components we should adopt
+3. Styling improvements
+4. Migration plan
+
+Do not write code yet.

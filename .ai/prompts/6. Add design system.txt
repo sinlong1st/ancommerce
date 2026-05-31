@@ -1,0 +1,13 @@
+Create .ai/context/design_system.md based on the Claude homepage design analysis.
+
+Include:
+- brand style
+- color direction
+- typography
+- spacing
+- button styles
+- card styles
+- section rhythm
+- ecommerce homepage layout rules
+
+Do not change app code.

@@ -1,0 +1,20 @@
+Read:
+- .ai/context/project_context.md
+- .ai/rules/global_rules.md
+
+Task:
+Improve the homepage hero section.
+
+Requirements:
+- Make the hero section visually clear and bright (fix dark text issue)
+- Add proper contrast (background vs text)
+- Make "Shop Now" button stand out
+- Add max-width container and center content
+- Use Tailwind only
+- Keep it simple but look like a real ecommerce landing page
+
+Do not touch Navbar or Footer.
+
+After coding:
+- List updated files
+- Provide manual test steps

@@ -1,0 +1,27 @@
+Read:
+- .ai/context/project_context.md
+- .ai/context/current_status.md
+- .ai/rules/global_rules.md
+- .ai/workflows/feature_dev_workflow.md
+- .ai/skills/feature_planning.md
+
+Task:
+Build the MVP product listing page.
+
+Requirements:
+- Create /products page
+- Use static mock product data for now
+- Show product grid
+- Each product card should show image placeholder, name, category, price, and "View Product" button
+- Keep styling clean and responsive
+- Use Tailwind only
+- Do not set up database yet
+- Plan only first. Do not write code yet.
+
+Rules:
+
+Do not add new libraries
+Do not set up database yet
+Keep all components as Server Components
+Do not modify unrelated files
+After coding, list changed files and manual test steps
