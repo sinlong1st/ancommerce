@@ -1,9 +1,13 @@
+"use client";
+
 import Link from "next/link";
+import { useCart } from "@/context/CartContext";
+import { HomeFeaturedBadge } from "@/lib/home-data";
 import { Product } from "@/types/product";
 
-interface ProductCardProps {
+interface HomeProductCardProps {
   product: Product;
-  badgeLabel?: "Sale" | "New" | "Bestseller";
+  badgeLabel?: HomeFeaturedBadge;
 }
 
 function getCategoryStyles(category: string): {
@@ -49,14 +53,22 @@ function getCategoryStyles(category: string): {
   }
 }
 
-function getBadgeClassName(badgeLabel: "Sale" | "New" | "Bestseller") {
+function getBadgeClassName(badgeLabel: HomeFeaturedBadge) {
   if (badgeLabel === "New") return "bg-[#2E8B8B]";
   if (badgeLabel === "Bestseller") return "bg-[#C2683C]";
   return "bg-[#E8A93C] text-[#241133]";
 }
 
-export default function ProductCard({ product, badgeLabel }: ProductCardProps) {
+export default function HomeProductCard({
+  product,
+  badgeLabel,
+}: HomeProductCardProps) {
+  const { addItem } = useCart();
   const styles = getCategoryStyles(product.category);
+
+  function handleQuickAdd() {
+    addItem({ id: product.id, name: product.name, price: product.price });
+  }
 
   return (
     <article className="group relative flex flex-col overflow-hidden rounded-[26px] border border-[#ECDFD0] bg-white shadow-[0_24px_48px_-30px_rgba(42,30,20,.3)] transition-transform duration-200 hover:-translate-y-1">
@@ -97,7 +109,10 @@ export default function ProductCard({ product, badgeLabel }: ProductCardProps) {
         </div>
 
         <h3 className="min-h-[2.5em] text-[16px] font-bold leading-[1.25] text-[#2A1E14]">
-          <Link href={`/products/${product.id}`} className="transition-colors hover:text-[#C2683C]">
+          <Link
+            href={`/products/${product.id}`}
+            className="transition-colors hover:text-[#C2683C]"
+          >
             {product.name}
           </Link>
         </h3>
@@ -107,12 +122,31 @@ export default function ProductCard({ product, badgeLabel }: ProductCardProps) {
             ${product.price.toFixed(2)}
           </p>
 
-          <Link
-            href={`/products/${product.id}`}
-            className="inline-flex items-center justify-center rounded-full bg-[#C2683C] px-4 py-2 text-sm font-bold text-white shadow-[0_18px_40px_-22px_rgba(194,104,60,.5)] transition-all hover:brightness-105"
-          >
-            View
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link
+              href={`/products/${product.id}`}
+              className="inline-flex items-center justify-center rounded-full border border-[#ECDFD0] px-3 py-2 text-sm font-bold text-[#7A4A33] transition-colors hover:border-[#C2683C] hover:text-[#C2683C]"
+            >
+              View
+            </Link>
+            <button
+              type="button"
+              onClick={handleQuickAdd}
+              aria-label={`Add ${product.name} to cart`}
+              className="inline-flex h-[38px] w-[38px] items-center justify-center rounded-full bg-[#C2683C] text-white shadow-[0_18px_40px_-22px_rgba(194,104,60,.5)] transition-all hover:rotate-90 hover:brightness-105"
+            >
+              <svg
+                className="h-[18px] w-[18px]"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="2.4"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 5v14M5 12h14" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </article>

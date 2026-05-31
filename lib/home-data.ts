@@ -14,6 +14,8 @@ export interface HomeValueProp {
   icon: "shield" | "truck" | "lock";
 }
 
+export type HomeFeaturedBadge = "Sale" | "New" | "Bestseller";
+
 export const homeHero = {
   eyebrow: "New season drops every week",
   title: "Everything you love,",
@@ -51,6 +53,14 @@ export const homeValueProps: HomeValueProp[] = [
 ];
 
 export const homeFeaturedProducts: Product[] = mockProducts.slice(0, 8);
+
+export const homeFeaturedBadges: Record<string, HomeFeaturedBadge> = {
+  "1": "Bestseller",
+  "2": "Sale",
+  "3": "New",
+  "6": "Bestseller",
+  "8": "Sale",
+};
 
 function iconForCategory(category: string): string {
   switch (category.toLowerCase()) {

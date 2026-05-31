@@ -1,6 +1,7 @@
 import Link from "next/link";
-import ProductCard from "@/components/product/ProductCard";
+import HomeProductCard from "@/components/home/HomeProductCard";
 import HomeSectionHeader from "@/components/home/HomeSectionHeader";
+import { homeFeaturedBadges } from "@/lib/home-data";
 import { Product } from "@/types/product";
 
 interface HomeFeaturedProductsProps {
@@ -9,7 +10,7 @@ interface HomeFeaturedProductsProps {
 
 export default function HomeFeaturedProducts({ products }: HomeFeaturedProductsProps) {
   return (
-    <section className="bg-white py-16 sm:py-20">
+    <section className="bg-white py-12 sm:py-14">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <HomeSectionHeader
           kicker="Handpicked for you"
@@ -18,9 +19,13 @@ export default function HomeFeaturedProducts({ products }: HomeFeaturedProductsP
           actionHref="/products"
         />
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <HomeProductCard
+              key={product.id}
+              product={product}
+              badgeLabel={homeFeaturedBadges[product.id]}
+            />
           ))}
         </div>
 
